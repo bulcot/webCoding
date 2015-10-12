@@ -3,9 +3,7 @@
 		$('.sliderBox').each(function(){
 			var index = 0;
 			var size = $(this).closest('.ABanner').find('>div').find('>div').find('>div').size();
-			/* var delay = 1000;
-			var visual_time = setInterval(visualM,delay);
-			/* var stop = false; */
+			
 			var realContent = $(this).closest('.ABanner').find('>div').find('>div').find('>div');
 			realContent.hide().eq(0).show().addClass('on');
 			$(this).closest('.ABanner').find('.btnPrev').click(function(){
@@ -25,21 +23,7 @@
 				realContent.eq(index).addClass('on').show().siblings().hide().removeClass('on');
 			}
 	
-			/* $('.ABanner').find('a').focusin(function(){
-				clearInterval(visual_time);
-			}).focusout(function(){
-				if(!stop){
-					clearInterval(visual_time);
-					visual_time = setInterval(visualM,delay);
-				}
-			}); 
 			
-			var playstop = $('.ABanner').find('.playStop a');
-			playstop.click(function(){
-				$(this).index() == 0 ? stop = true : stop = false; 
-				$(this).hide().siblings().css('display','block');
-				return false;
-			}); */
 		});
 	});
 </script>
